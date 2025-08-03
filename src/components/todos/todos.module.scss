@@ -1,0 +1,22 @@
+@use '@/colors.module';
+
+.todos {
+  display: flex;
+  flex-direction: column;
+  background-color: colors.$clr-primary;
+  width: 40%;
+  min-width: 50rem;
+  max-height: 70rem;
+  margin: 0 auto;
+  padding: 2rem 3rem;
+  border-radius: 2rem;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  & > *:not(:last-child) {
+    border-bottom: .2rem solid colors.$clr-tertiary;
+  }
+}

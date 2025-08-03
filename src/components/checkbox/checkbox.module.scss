@@ -1,0 +1,31 @@
+@use "@/colors.module";
+
+.checkboxOriginal {
+  display: none;
+}
+
+.checkboxCustom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  aspect-ratio: 1;
+  background-color: colors.$clr-secondary;
+  border: .2rem solid colors.$clr-tertiary;
+  border-radius: .2rem;
+  cursor: pointer;
+}
+
+.tick {
+  display: block;
+  width: 80%;
+  aspect-ratio: 2;
+  border-left: .5rem solid colors.$clr-tertiary;
+  border-bottom: .5rem solid colors.$clr-tertiary;
+  rotate: -45deg;
+  translate: 0 -.25rem;
+}
+
+.tick_hidden {
+  display: none;
+}
